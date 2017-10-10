@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>demo-customers-api</groupId>
+	<artifactId>demo-customers-api</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+	<name>demo-customers-api</name>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+	<profiles>
+	    <profile>
+			<id>development</id>
+			<properties>
+			    
+				<!-- *********************************************************** -->
+				<!-- 						SERVER 								 -->
+				<!-- *********************************************************** -->
+			    
+			    <server.port>8080</server.port>
+
+				<!-- *********************************************************** -->
+				<!-- 					HIBERNATE.CFG.XML						 -->
+				<!-- *********************************************************** -->
+
+				<connection.driver_class>org.h2.Driver</connection.driver_class>
+				<connection.url>jdbc:h2:./customer_sample</connection.url>
+				<connection.username>sample</connection.username>
+				<connection.password>123456</connection.password>
+				<connection.pool_size>1</connection.pool_size>
+				
+				<connection.hibernate_dialect>org.hibernate.dialect.H2Dialect</connection.hibernate_dialect>
+				<connection.naming_strategy />
+
+				<connection.current_session_context_class>thread</connection.current_session_context_class>
+				<connection.cache.provider_class>org.hibernate.cache.NoCacheProvider</connection.cache.provider_class>
+				<connection.show_sql>false</connection.show_sql>
+				<connection.hbm2ddl.auto>update</connection.hbm2ddl.auto>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>	
+		<dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.11 
+Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2017.10.10 a las 05:17:51 PM ART 
+
+  -->
+  <bindings xmlns:tns="http://www.scienza.com.ar/MB_BK_SCIENZA_COORD_ENT" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_COORD_ENT">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZACOORDENT"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_COORD_ENT_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZACOORDENTResponse"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:scienza.com.ar:Consulta_Trazas" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_CONS_TRAZAS_MOB_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZACONSTRAZASMOBResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_CONS_TRAZAS_MOB">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZACONSTRAZASMOB"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:scienza.com.ar:Indice_Pedidos" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_IND_PEDIDO_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAINDPEDIDOResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_IND_PEDIDO">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAINDPEDIDO"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:scienza.com.ar:Pedidos_Entregas" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_PED_ENTR_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAPEDENTRResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_PED_ENTR">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAPEDENTR"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:scienza.com.ar:Coordinacion_Entrega" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_RTA_COORD_ENTR_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZARTACOORDENTRResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_RTA_COORD_ENTR">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZARTACOORDENTR"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:scienza.com.ar:Registro_Usuarios" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_REG_US_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAREGUSResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_REG_USUA">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZAREGUSUA"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://www.scienza.com.ar/MB_BK_SCIENZA_NOTIF_ENT" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_NOTIF_ENT">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZANOTIFENT"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DT_SCIENZA_NOTIF_ENT_Response">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.DTSCIENZANOTIFENTResponse"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://web.logictracker.com/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="ar.com.fusap.sample.remote.ws.dto"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:GetStatus">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.GetStatus"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:GetStatusResponse">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.GetStatusResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RespuestaOfArrayOfEntrega">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.RespuestaOfArrayOfEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:Login">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.Login"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:LoginResponse">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.LoginResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RespuestaOfString">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.RespuestaOfString"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:IsActive">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.IsActive"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:IsActiveResponse">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.IsActiveResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RespuestaOfBoolean">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.RespuestaOfBoolean"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:Logout">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.Logout"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:LogoutResponse">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.LogoutResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfEntrega">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.ArrayOfEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Entrega">
+      <class ref="ar.com.fusap.sample.remote.ws.dto.Entrega"/>
+    </bindings>
+  </bindings>
+</bindings>
